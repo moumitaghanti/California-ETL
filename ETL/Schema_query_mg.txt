@@ -1,0 +1,29 @@
+Drop table crime;
+CREATE TABLE crime (
+  id INT PRIMARY KEY,
+  reportyear int,
+  geotype text,
+  geoname text,
+  county_name text,
+  region_name text,
+  strata_level_name text,
+  no_of_crime int,	
+  population int,
+  rate float
+);
+
+select * from crime;
+
+------
+Drop table gdp;
+CREATE TABLE gdp (
+	ID INT PRIMARY KEY,
+	Taxable_Year INT,
+	Year_Time_Date TIMESTAMP,
+	County text,
+	Adjusted_Gross_Income float,
+    Tax_Assessed float,
+    Latitude float,
+    Longitude float);
+
+select * from gdp;
